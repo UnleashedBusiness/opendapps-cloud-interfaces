@@ -24,7 +24,7 @@ interface ProposalGovernorInterface is GovernorInterface {
     function buildProposalId(address[] memory targets, uint256[] memory values, bytes[] memory calldatas, bytes32 descriptionHash) external view returns (uint256);
     function canVote(address wallet) external view returns (bool);
     function canPropose(address wallet) external view returns (bool);
-    function hasVoted(uint256 proposalId, address account) external view virtual returns (bool);
+    function hasVoted(uint256 proposalId, address account) external view returns (bool);
     function makeProposal(
         address[] memory targets,
         uint256[] memory values,
