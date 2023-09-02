@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.7;
 
 interface IReferralsEngine {
     function getCompensationPercent(bytes32 refCode) external view returns(uint256 percent, address receiver);
