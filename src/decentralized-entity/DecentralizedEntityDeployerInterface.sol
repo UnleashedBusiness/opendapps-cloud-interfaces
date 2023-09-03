@@ -7,8 +7,8 @@ interface DecentralizedEntityDeployerInterface {
         address treasury;
     }
 
-    function deploySingleOwnerEntity(string calldata entityName, string calldata metadataUrl) external returns(EntityDeployment calldata);
-    function deployMultiSignEntity(string calldata entityName, uint256 votingBlocksLength, string calldata metadataUrl) external returns(EntityDeployment calldata);
-    function deployMultiSignSharesEntity(string calldata entityName, uint256 votingBlocksLength, string calldata metadataUrl) external returns (EntityDeployment calldata);
+    function deploySingleOwnerEntity(string calldata entityName, string calldata metadataUrl) external returns(EntityDeployment memory);
+    function deployMultiSignEntity(string calldata entityName, uint256 votingBlocksLength, string calldata metadataUrl) external returns(EntityDeployment memory);
+    function deployMultiSignSharesEntity(string calldata entityName, uint256 votingBlocksLength, string calldata metadataUrl) external returns (EntityDeployment memory);
     function upgradeTreasury(address treasury) payable external;
 }
