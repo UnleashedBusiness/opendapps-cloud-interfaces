@@ -10,5 +10,5 @@ interface DecentralizedEntityDeployerInterface {
     function deploySingleOwnerEntity(string calldata entityName, string calldata metadataUrl) external returns(EntityDeployment);
     function deployMultiSignEntity(string calldata entityName, uint256 votingBlocksLength, string calldata metadataUrl) external returns(EntityDeployment);
     function deployMultiSignSharesEntity(string calldata entityName, uint256 votingBlocksLength, string calldata metadataUrl) external returns (EntityDeployment);
-    function upgradeTreasury() payable external;
+    function upgradeTreasury(address treasury) payable external;
 }
