@@ -7,4 +7,7 @@ interface TokenAsAServiceInterface {
     function inflation() external view returns(address);
     function owner() external view returns(address);
     function metadataUrl() external view returns(string memory);
+
+    function ownershipCollection() external view returns(address);
+    function ownershipTokenId() external view returns(uint256);
 }
