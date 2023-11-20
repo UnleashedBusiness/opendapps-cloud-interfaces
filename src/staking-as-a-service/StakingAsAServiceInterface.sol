@@ -9,4 +9,9 @@ interface StakingAsAServiceInterface {
     function deposit(uint256 amount) external;
     function withdraw(uint256 amount) external;
     function lock(uint256 rounds) external;
+
+    function enableRewardProvider(address provider) external;
+    function setEpochBlockDistance(uint256 _distance) external;
+    function enableRewardToken(address token) external;
+    function setEpochMaxRewards(address token, uint256 maxRewardsPerEpoch) external;
 }
