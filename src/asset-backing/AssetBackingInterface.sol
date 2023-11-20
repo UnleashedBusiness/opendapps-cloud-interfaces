@@ -15,4 +15,6 @@ interface AssetBackingInterface {
 
     function flipBurn(uint256 minAmountOut, uint256 amountIn) payable external;
     function smartBurn(uint256 minAmountOut, uint256 amount) external;
+
+    function enableRewardProvider(address provider) external;
 }
