@@ -15,4 +15,6 @@ interface DynamicTokenomicsInterface {
 
     function createTaxableConfig() external;
     function addTaxForPath(address from, address to, uint256 i) external;
+
+    function addPayee(uint256 i, address account, uint256 shares_, uint256 nativeFlipShares) external;
 }
