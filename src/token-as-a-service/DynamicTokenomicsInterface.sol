@@ -2,6 +2,7 @@
 pragma solidity ^0.8.7;
 
 interface DynamicTokenomicsInterface {
+    function taxScaling() view external returns(uint256);
     function availableTaxableConfigurations() view external returns (uint256);
     function totalTax(address from, address to) view external returns (uint256);
 
