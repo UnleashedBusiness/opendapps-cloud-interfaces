@@ -8,4 +8,5 @@ interface IOpenDAppsCloudRouter {
     function tokenAsAServiceDeployer() external view returns (address);
     function stakingAsAServiceDeployer() external view returns (address);
     function assetBackingDeployer() external view returns (address);
+    function presaleServiceDeployer() external view returns (address);
 }
