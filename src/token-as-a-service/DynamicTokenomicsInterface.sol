@@ -18,5 +18,4 @@ interface DynamicTokenomicsInterface {
     function addTaxForPath(address from, address to, uint256 i) external;
 
     function addPayee(uint256 i, address account, uint256 shares_, uint256 nativeFlipShares) external;
-    function addPayeeWithAutoRelease(uint256 i, address account, uint256 shares_, uint256 nativeFlipShares, bool autoRelease) external;
 }
