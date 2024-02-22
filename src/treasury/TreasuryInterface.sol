@@ -11,10 +11,6 @@ interface TreasuryInterface {
     function addRewardToken(address token) external;
     function removeRewardToken(address token) external;
 
-    function enableOperation(address operation) external;
-    function disableOperation(address operation) external;
-    function isValidOperation(address operation) external view returns(bool);
-
     function addPayee(address account, uint256 shares) external;
     function changePayeeShare(address account, uint256 shares) external;
     function removePayee(address account) external;
