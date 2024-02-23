@@ -32,10 +32,7 @@ interface TokenAsAServiceDeployerInterface {
         uint256 ownerAmount, string calldata metadataUrl, bytes32 refCode
     ) payable external returns (TokenDeployment memory);
 
-    function addLiqudityToDexNative(address router, address token, address treasury, uint256 tokenLiquidityAmount, uint256 ethLiquidityAmount) payable external;
-    function addLiqudityToDexNativeFromWallet(address router, address token, address treasury, uint256 tokenLiquidityAmount, uint256 ethLiquidityAmount) payable external;
 
-    function upgradeTreasury(address treasury) payable external;
     function upgradeTokenomics(address tokenomics) payable external;
     function upgradeInflation(address inflation) payable external;
 }
