@@ -8,7 +8,7 @@ interface TreasuryDeployerInterface {
     function disableOperation(address operation) external;
     function isValidOperation(address operation) external view returns(bool);
 
-    function deploy() payable external returns (address);
+    function deploy(bytes32 refCode) payable external returns (address);
     function upgrade(address treasury) payable external returns (address);
 
     function setPocketLibraryAddress(address _libraryAddress) external;
