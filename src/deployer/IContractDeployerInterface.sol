@@ -2,6 +2,7 @@
 pragma solidity ^0.8.7;
 
 interface IContractDeployerInterface {
+    function referralsEngine() external view returns (address);
     function currentTemplate(bytes32 groupHash, uint8 typeNumber) external view returns (address);
     function deployTaxForAddress(address deployer, bytes32 groupHash, uint8 typeNumber) external view returns (uint256);
 
