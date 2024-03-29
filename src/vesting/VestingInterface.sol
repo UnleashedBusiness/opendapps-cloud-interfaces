@@ -26,6 +26,6 @@ interface VestingInterface {
 
     function withdraw(address token, uint256 amount) external;
     function claim(address token, uint256 amount) external;
-    function begin(address[] calldata tokens, address[] payees, uint256[] payeePercents, uint256 rewardCycles, uint256 blocksPerCycle) external;
+    function begin(address[] calldata tokens, address[] calldata payees, uint256[] calldata payeePercents, uint256 rewardCycles, uint256 blocksPerCycle) external;
     function enableToken(address token) external;
 }
