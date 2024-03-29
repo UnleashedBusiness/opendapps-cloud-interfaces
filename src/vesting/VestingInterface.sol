@@ -20,8 +20,8 @@ interface VestingInterface {
     function lockHeight() external view returns (uint256);
     function finalReleaseHeight() external view returns (uint256);
 
-    function rewardTokens() external view returns (address[]);
-    function payees() external view returns (address[], uint256[]);
+    function rewardTokens() external view returns (address[] memory);
+    function payees() external view returns (address[] memory, uint256[] memory);
     function payeePercent(address wallet) external view returns (uint256);
 
     function withdraw(address token, uint256 amount) external;
