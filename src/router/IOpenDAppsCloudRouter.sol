@@ -10,4 +10,6 @@ interface IOpenDAppsCloudRouter {
     function assetBackingDeployer() external view returns (address);
     function presaleServiceDeployer() external view returns (address);
     function treasuryDeployer() external view returns (address);
+    function vestingDeployer() external view returns (address);
+    function distributorDeployer() external view returns (address);
 }
