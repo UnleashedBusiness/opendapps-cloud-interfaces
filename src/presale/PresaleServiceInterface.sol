@@ -27,4 +27,5 @@ interface PresaleServiceInterface  {
     function buy(uint256 amount) external payable;
     function claim() external;
     function withdraw() external;
+    function claimFunding() external;
 }
