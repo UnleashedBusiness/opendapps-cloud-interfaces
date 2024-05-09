@@ -6,4 +6,5 @@ interface PresaleServiceDeployerInterface {
     function minBlocksDuration() external returns (uint256);
 
     function deploy(address token, address exchangeToken, bytes32 refCode) payable external returns (address);
+    function upgrade(address presale) external;
 }
