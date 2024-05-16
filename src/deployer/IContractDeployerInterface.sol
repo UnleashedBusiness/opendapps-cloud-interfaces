@@ -17,6 +17,10 @@ interface IContractDeployerInterface {
         bytes32 groupHash, uint8 typeNumber, address libraryAddress
     ) external;
 
+    function upgradeTemplateInterfaceList(
+        bytes32 groupHash, uint8 typeNumber, bytes4[] memory expectedInterfaceId
+    ) external;
+
     function upgradeContractWithProxy(
         bytes32 groupHash, address _contract
     ) external;
