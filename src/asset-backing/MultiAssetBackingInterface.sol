@@ -15,8 +15,8 @@ interface MultiAssetBackingInterface {
     function withdrawBurn() external;
     function lock(uint256 durationInBlocks) external;
 
-    function flipBurn(uint256[] minAmountOut, uint256 amountIn) payable external;
-    function smartBurn(uint256 minAmountOut, uint256[] amount) external;
+    function flipBurn(uint256 minAmountOut, uint256[] memory amountsIn) payable external;
+    function smartBurn(uint256[] memory minAmountsOut, uint256 amount) external;
 
     function enableRewardProvider(address provider) external;
 }
