@@ -5,7 +5,7 @@ import {IPendingRewardProvider} from "../rewards/IPendingRewardProvider.sol";
 
 interface DistributorInterface_v1 is IPendingRewardProvider {
     function getInputs() external view returns (address[] memory);
-    function getOutputs() public view returns (address[] memory);
+    function getOutputs() external view returns (address[] memory);
     function getPayees() external view returns (address[] memory);
     function getPayeeOutputPercents(address payee) external view returns (address[] memory outputs, uint256[] memory percents);
 
