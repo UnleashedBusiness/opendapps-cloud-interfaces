@@ -4,6 +4,7 @@ pragma solidity ^0.8.0;
 import {IPendingRewardProvider} from "../rewards/IPendingRewardProvider.sol";
 
 interface DistributorInterface_v1 is IPendingRewardProvider {
+    function percentScaling() external view returns (uint256);
     function getInputs() external view returns (address[] memory);
     function getOutputs() external view returns (address[] memory);
     function getPayees() external view returns (address[] memory);
