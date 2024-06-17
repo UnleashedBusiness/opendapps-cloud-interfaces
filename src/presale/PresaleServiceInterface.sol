@@ -12,6 +12,7 @@ interface PresaleServiceInterface  {
     function exchangeRate() external returns (uint256);
     function minPerWallet() external returns (uint256);
     function maxPerWallet() external returns (uint256);
+    function percentScaling() external returns (uint256);
     function controllerTax() external returns (uint256);
 
     function isRunning() external view returns (bool);
