@@ -30,4 +30,5 @@ interface PresaleServiceInterface  {
     function claim() external;
     function withdraw() external;
     function claimFunding() external;
+    function changeMinStartBlocks(uint256 count) external;
 }
