@@ -49,4 +49,6 @@ interface TokenAsAServiceDeployerInterface {
     function upgradeTokenomics(address tokenomics) payable external;
 
     function upgradeInflation(address inflation) payable external;
+
+    function upgradeLiquidityMiningProxy(address proxy) payable external;
 }
