@@ -41,7 +41,14 @@ interface TokenAsAServiceDeployerInterface {
         bytes32 refCode
     ) payable external returns (TokenDeployment memory);
 
+    function deployLiquidityMiningProxy(
+        address tokenAddress,
+        bytes32 refCode
+    ) payable external returns (address);
+
     function upgradeTokenomics(address tokenomics) payable external;
 
     function upgradeInflation(address inflation) payable external;
+
+    function upgradeLiquidityMiningProxy(address proxy) payable external;
 }
