@@ -3,6 +3,8 @@ pragma solidity ^0.8.7;
 
 interface IReferralsEngine {
     function getCompensationPercent(bytes32 refCode) external view returns(uint256 percent, address receiver);
+    function getTaxationReceivers(bytes32 refCode) external view returns (uint256[] memory percents, address[] memory receiversArray);
+
     function calculateCompensationSize(bytes32 refCode, uint256 values) external view returns(uint256 compensationValue, uint256 remaining);
     function assignRefCodeToSelf(bytes32 refCode) external;
     function assignRefCodeToAddress(bytes32 refCode, address receiver) external;
