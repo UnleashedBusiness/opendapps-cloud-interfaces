@@ -20,7 +20,7 @@ interface StakingAsAServiceInterface_v2 is StakingAsAServiceInterface {
 
     function epochCanBeRaised() external view returns (bool);
     function currentEpoch() external view returns (uint256);
-    function totalAvailableRewards() external view returns (uint256);
+    function totalAvailableRewards(address token) external view returns (uint256);
     function rewardTokens() external view returns (address[] memory);
 
     function createVault(bytes32 hash) external;
