@@ -2,6 +2,8 @@
 pragma solidity ^0.8.7;
 
 interface LiquidityMiningProxyInterface {
+    function balanceOf(address pair, address wallet) external view returns (uint256);
+
     function allowedPairsForRouter(address router) external view returns(address[] memory);
     function toggleV2PairWhitelist(address router, address pairedAsset) external;
 
