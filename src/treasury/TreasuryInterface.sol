@@ -20,6 +20,14 @@ interface TreasuryInterface {
     function removePayeeExtended(address account, uint256 pocketIndex) external;
 
     function getPayees() external view returns (address[] memory);
+    function getPayeesExtended() external view returns (
+        address[] memory payeesReturn,
+        uint256[] memory pocketsCount,
+        address[] memory pocketList,
+        bytes32[] memory pocketNames,
+        uint256[] memory pocketPercents
+    );
+    function payeePockets(address account) external view returns (uint256);
     function payeePercent(address account) external view returns (uint256);
     function payeePercentExtended(address account, uint256 index) external view returns (uint256);
     function getController() external view returns (address);
